@@ -1,5 +1,5 @@
 // const URL = "api/ron/quotes";
-const URL = "ron-swanson-quotes.herokuapp.com/v2/quotes";
+const URL = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#ron").addEventListener("click", getRon);
