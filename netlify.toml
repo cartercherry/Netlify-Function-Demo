@@ -1,5 +1,5 @@
 [build]
-  publish='.'
+  publish=''
   command='echo "Building project..."'
 [[redirects]]
   from="/api/ron/*"
