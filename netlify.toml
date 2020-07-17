@@ -1,4 +1,8 @@
 [build]
   publish='.'
   command='Building project...'
-  
+[[redirects]]
+  from="/api/ron/*"
+  to="https://ron-swanson-quotes.herokuapp.com/v2/:splat"
+  status=200
+
