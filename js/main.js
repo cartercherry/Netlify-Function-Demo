@@ -8,11 +8,18 @@ document.addEventListener("DOMContentLoaded", () => {
 function getRon(ev) {
   ev.preventDefault();
   console.log("Getting Ron quote...");
+
   fetch(URL)
-    .then((res) => resp.json())
+    .then((res) => {
+      res.json();
+      console.log(res.json());
+    })
     .then((content) => {
+      console.log(`Content: ${content}`);
       let main = document.querySelector("main");
-      main.innerHTML = `<h2>${content[0]}</h2>`;
+      alert("Where is content");
+      // main.innerHTML = `<h2>${content[0]}</h2>`;
+      main.innerHTML = "DEBUG!";
     })
     .catch((err) => console.error);
 }
