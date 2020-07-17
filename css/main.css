@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #555;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 3px;
+}
+
+header {
+  background-color: #ccc;
+  grid-column: span 12;
+}
+
+nav {
+  background-color: #aaa;
+  grid-column: span 3;
+  grid-row: span 11;
+}
+
+nav ul {
+  list-style: none;
+}
+
+main {
+  grid-column: span 9;
+  background-color: #ddd;
+}
